@@ -1,1 +1,59 @@
-hej
+h1,h2,h3 {
+    font-family: 'Frank Ruhl Libre', serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 0.7rem;
+    line-height: 1.5rem;
+}
+
+a {
+    font-family: 'Fira Sans', sans-serif;
+}
+body {
+    background: #e5e5e5;
+}
+
+.wrapper {
+    display: grid;
+    justify-content: center;
+    width: 1000px;
+}
+
+/* Meny */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 3rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--grey);
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #A9A19E;
+    height: 80vh;
+}
+
+.contact h1 {
+    display: grid;
+    justify-self: center;
+    color: white;
+}
+
+.contact .form {
+    display: grid;
+
+}

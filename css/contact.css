@@ -17,29 +17,62 @@ a {
     font-family: 'Fira Sans', sans-serif;
 }
 body {
-    background: #e5e5e5;
+    display: grid;
+    justify-items: center;
+    background: #E5E5E5;
 }
 
 .wrapper {
     display: grid;
-    justify-content: center;
     width: 1000px;
 }
 
+/* header */
+
+.blue-box {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    height: 60vh;
+    background: #C7DDEA;
+}
+
+.blue-box h1 {
+    display: grid;
+    grid-column: 3 / 5;
+    grid-row: 3 / 4;
+}
+
+.blue-box img {
+    display: grid;
+    grid-column: 5 / 6;
+    grid-row: span 6;
+    align-self: end;
+
+}
+
 /* Meny */
+section:nth-child(2) {
+    padding: 0 10%;
+    background: white;
+}
 
 nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
+    justify-self: center;
     height: 3rem;
 }
 
 nav a {
-    text-decoration: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.02em;
     color: #000000;
     opacity: 0.4;
+    text-decoration: none;
 }
 /* contact section */
 .contact {

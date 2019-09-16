@@ -17,9 +17,14 @@ h1,h2,h3 {
     font-family: 'Frank Ruhl Libre', serif;
 }
 
+h1 {
+    font-size: 2.5rem;
+}
+
 p {
     font-family: 'Fira Sans', sans-serif;
     font-size: 0.7rem;
+    line-height: 1.5rem;
 }
 
 a {
@@ -42,6 +47,15 @@ body {
 img {
     width: 50%;
 }
+button {
+	background-color: var(--light);
+    border-radius: 20px;
+    display: inline-block;
+	color: var(--grey);
+	padding: 1rem 2rem;
+    text-decoration: none;
+    border: none;
+}
 
 .header-container {
     display: grid;
@@ -54,15 +68,50 @@ img {
 .header-item1 {
     grid-area: showcase;
     background: var(--blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-item1 div {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+    padding-top: 2.5rem;
+}
+
+.header-item1 p {
+    width: 80%;
+}
+.header-item1 div button {
+    align-self: flex-start;
+    margin-top: 1rem;
+}
+
+.header-item1 img {
+    align-self: flex-end;
+    justify-self: flex-end;
+    padding-bottom: -10rem;
+    
+
 }
 
 .header-item2 {
     grid-area: learn;
     background: var(--red);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .header-item3 {
     grid-area: join;
     background: var(--yellow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Meny */
@@ -72,7 +121,7 @@ nav {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 2.5rem;
+    height: 3rem;
 }
 
 nav a {
@@ -87,20 +136,42 @@ nav a {
 .box1 article {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 15rem;
+    padding-bottom: 2.5rem;
 }
 
 .box1 article div {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-self: center;
+    align-self: center;
     align-items: center;
     width: 60%;
+    padding-top: 2.5rem;
+}
+.box1 article p {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    align-items: center;
+    width: 60%;
+    padding-top: 2.5rem;
 }
 
+.box1 button {
+    align-self: flex-start;
+    margin-top: 2.5rem;
+
+}
 .box1 section {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+.box1 section h3 {
+    align-self: center;
 }
 
 .box1 section article {
@@ -182,8 +253,7 @@ nav a {
     background: white;
     height: 12rem;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
 }
 
 .boxes:nth-child(1) {
@@ -200,9 +270,18 @@ nav a {
     color: darkgrey;
     align-self: flex-start;
     justify-self: flex-start;
+    margin-left: 0;
 }
 
-.boxes p,.boxes h1  {
+.boxes p {
+    color: rgb(54, 54, 54);
+    margin: auto 0;
+    text-align: center;
+}
+.boxes h1 {
+    display: flex;
+    align-self: center;
+    text-align: center;
 
 }
 

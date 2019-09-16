@@ -24,14 +24,15 @@ body {
 
 .wrapper {
     display: grid;
-    width: 1000px;
+    width: 1000;
+    margin: 0 10rem;
 }
 
 /* header */
 
 .blue-box {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(5, 1fr);
     height: 60vh;
     background: #C7DDEA;
@@ -45,9 +46,11 @@ body {
 
 .blue-box img {
     display: grid;
-    grid-column: 5 / 6;
+    grid-column: 5 / 7;
     grid-row: span 6;
     align-self: end;
+    justify-self: start;
+    width: 80%;
 
 }
 

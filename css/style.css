@@ -125,15 +125,23 @@ nav a {
     color: var(--grey);
 }
 
-/* Main Box 1 */
+/* Main Box 1 - gray */
 .box1 {
     background: var(--grey);
 }
+
+.box1 h1 {
+    color: #ffffff;
+}
+
 .box1 article {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 15rem;
-    padding-bottom: 2.5rem;
+}
+
+.box1 .box1-join {
+    padding-bottom: 6rem;
 }
 
 .box1 article div {
@@ -143,8 +151,12 @@ nav a {
     align-self: center;
     align-items: center;
     width: 60%;
-    padding-top: 2.5rem;
 }
+
+.box1 .box1-join {
+    padding-top: 4rem;
+}
+
 .box1 article p {
     display: flex;
     flex-direction: column;
@@ -152,7 +164,7 @@ nav a {
     align-self: center;
     align-items: center;
     width: 60%;
-    padding-top: 2.5rem;
+    font-size: 14px;
 }
 
 .box1 button {
@@ -160,29 +172,45 @@ nav a {
     margin-top: 2.5rem;
 
 }
-.box1 section {
+
+/* Cards */
+.cards {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
 }
 
-.box1 section h3 {
-    align-self: center;
-}
-
-.box1 section article {
+.cards article {
     background: #ffffff;
-    width: 25%;
+    width: 28%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
+    align-items: center;
+    margin: 0 0.8rem;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cards h3 {
+    align-self: center;
+}
+
+
+.box1 .cards article {
     border-radius: 5px 5px 0 0;
 }
 
-.box1 section article div {
+.box2 .cards article {
+    border-radius: 0 0 5px 5px;
+}
+
+.box1 .cards div {
     width: 95%;
-    border-radius: 5px;
+    border-radius: px;
+    position: relative;
+    top: -1rem;
+    padding-top: 1rem;
 }
 
 #blue {
@@ -221,23 +249,41 @@ nav a {
     object-position: 100% 0;
 }
 
+.box2 .cards p {
+    color: rgba(0, 0, 0, 0.7);
+    width: 80%;
+    text-align: center;
+    font-size: 11px;
+    padding: 1rem 0 2rem 0;
+}
 
-
-/* Main Box 2 */
+/* Main Box 2 - Yellow */
 .box2 {
     background: var(--yellow);
 }
 
-.box2 section {
+.about {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-bottom: 4rem;
 }
 
-.box2 section article {
-    background: #ffffff;
-    width: 25%;
+.about h1 {
+    color: white;
+    padding: 2rem 0;
 }
+
+.about p {
+    width: 46%;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* How it works boxes */
 
 .container-box {
     display: grid;
@@ -288,24 +334,6 @@ nav a {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.7);
     padding: 1rem 0;
-}
-
-.box2 article {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 5rem 0;
-}
-.box2 article h1 {
-    color: white;
-    padding: 2rem 0;
-}
-
-.box2 article p {
-    color: rgba(0, 0, 0, 0.7);
-    width: 50%;
-    text-align: center;
 }
 
 
